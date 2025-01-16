@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+aside div ul li a.active {
+  color: #1a1a1a;
+  background: #f6f6f6;
+}
+
+@layer components {
+  .tp-center {
+    @apply flex justify-center items-center;
+  }
+  .tp-between {
+    @apply flex justify-between items-center;
+  }
+  .elim_input {
+    @apply w-full h-[44px] border border-solid border-[#00000052] rounded-md bg-white/50 outline-none px-2 text-base !text-[#6D7185];
+  }
+  .elim_button {
+    @apply w-full h-[44px] bg-green-500 rounded-md p-[10px] text-white text-lg leading-6 cursor-pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 24px;
+}
+::-webkit-scrollbar-thumb {
+  background: #777;
+}
+::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 24px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #125bbb;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background-color: #bdbdbd;
+}
+
+.scrollable .active {
+  border: 2px solid #125bbb;
+}
+
+.blockScrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  color: black !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
