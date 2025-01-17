@@ -86,7 +86,7 @@ export const columnsAgent: GridColDef<IAgents>[] = [
     headerName: "#",
     width: 50,
   },
-  
+
   {
     field: "photo",
     headerName: "Аватар",
