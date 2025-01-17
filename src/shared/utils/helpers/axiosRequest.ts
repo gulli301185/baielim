@@ -1,15 +1,15 @@
-import { useAppDispatch, useAppSelector } from '@/app/hook';
-import { logOut, setToken, userToken } from '@/app/slices/userSlice';
-import { RefreshTokenResponse } from '@/shared/types';
-import axios from 'axios';
-import dayjs from 'dayjs';
-import { jwtDecode } from 'jwt-decode';
+import { useAppDispatch, useAppSelector } from "@/app/hook";
+import { logOut, setToken, userToken } from "@/app/slices/userSlice";
+import { RefreshTokenResponse } from "@/shared/types";
+import axios from "axios";
+import dayjs from "dayjs";
+import { jwtDecode } from "jwt-decode";
 
 interface User {
   exp: number;
 }
 
-export const baseURL = 'https://baielim.ru/elim/api/';
+export const baseURL = "https://baielim.navisdevs.ru/elim/api";
 
 export const useAxiosRequest = () => {
   const authTokens = useAppSelector(userToken);
@@ -19,7 +19,7 @@ export const useAxiosRequest = () => {
     baseURL,
     headers: {
       Authorization: `Bearer ${authTokens?.access}`,
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
 
@@ -60,6 +60,6 @@ export const useAxiosRequest = () => {
 export const axiosRequest = axios.create({
   baseURL: baseURL,
   headers: {
-    'Content-type': 'application/json',
+    "Content-type": "application/json",
   },
 });
