@@ -219,7 +219,16 @@ export const columnsOrder: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
   {
@@ -402,7 +411,16 @@ export const columnsCancelledOrder: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
   {
@@ -592,7 +610,16 @@ export const columnsDebtOrder: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
   {
@@ -785,7 +812,16 @@ export const columnsArchiveOrder: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
 
@@ -979,7 +1015,16 @@ export const columnsAgentNewOrder: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
   {
@@ -1172,7 +1217,16 @@ export const columnsOrderManager: GridColDef<IOrders>[] = [
     width: 100,
     sortable: false,
     renderCell: ({ row }) => {
-      return <div>{row?.agent?.oneC_code}</div>;
+      return <div>{row?.store?.oneC_code}</div>;
+    },
+  },
+  {
+    field: "address",
+    headerName: "Адрес контрагента",
+    width: 200,
+    sortable: false,
+    renderCell: ({ row }) => {
+      return <div>{row?.store?.address}</div>;
     },
   },
   {
